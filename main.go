@@ -18,6 +18,8 @@ func main() {
 	router.Use(Logger())
 
 	routes.AuthRouter(router)
+	routes.ProfileRouter(router)
+	routes.AttendanceProfile(router)
 
-	router.Run(":9091")
+	router.Run(":8080")
 }

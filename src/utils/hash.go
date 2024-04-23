@@ -11,8 +11,3 @@ func HashPassword(password string) string {
 	hash.Write([]byte(password))
 	return hex.EncodeToString(hash.Sum(nil))
 }
-
-func generateJwtToken() {
-	// Generate JWT token
-	
-}

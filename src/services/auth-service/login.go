@@ -46,10 +46,21 @@ func LoginService(c *gin.Context) {
 		return
 	}
 
+	responseData.Password = ""
+
 	// Generate JWT token
-	
+	token, err := utils.CreateToken(responseData.ID)
+	// if err != nil {
+	// 	c.JSON(500, gin.H{
+	// 		"message": "Internal server error",
+	// 	})
+	// 	return
+	// }
+
 	// Return JWT token
 	c.JSON(200, gin.H{
 		"message": "Login successful",
+		"token":   token,
+		"data":    responseData,
 	})
 }
