@@ -37,6 +37,7 @@ This is a RESTful API service built with Go-Gin for managing attendance records.
 - `/v1/auth/login` - POST request to authenticate a user.
 - `/v1/auth/create-workspace` - POST request to create a new workspace.
 - `/v1/auth/register` - POST request to register a new user.
+- comming soon
 
 For detailed information about each endpoint and the expected request/response formats, please refer to the [API documentation](./docs/api.md).
 
